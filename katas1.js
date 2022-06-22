@@ -30,3 +30,14 @@ function oddsToTwenty(n) {
     return meuRetorno 
 }
 console.log(oddsToTwenty(20))
+
+function oddsToTwenty(n) {
+    let meuRetorno = [];
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 !== 0){
+            meuRetorno.push(i)
+        }
+    }
+    return meuRetorno 
+}
+console.log(multiplesOfFive(20))
