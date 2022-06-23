@@ -42,18 +42,13 @@ function multiplesOfFive(n) {
 }
 console.log(multiplesOfFive(100))
 
-function countingBackwards(n) {
+function countingBackwards() {
 
-    let maiorNumero = 0
+    let meuRetorno = [];
     
-    for (let i = 20; i <n.length; i--){
-        let numeroAtual = n[i]
-        if (numeroAtual > maiorNumero){
-            
-            maiorNumero = numeroAtual
-
-        }
+    for (let i = 20; i >=1; i--){
+        meuRetorno.push(i)
     } 
-    return numeroAtual
+    return meuRetorno
 }
-console.log(countingBackwards(20))
+console.log(countingBackwards())
