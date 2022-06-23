@@ -38,6 +38,22 @@ function multiplesOfFive(n) {
             meuRetorno.push(i)
         }
     }
-    return meuRetorno 
+    return meuRetorno  
 }
 console.log(multiplesOfFive(100))
+
+function countingBackwards(n) {
+
+    let maiorNumero = 0
+    
+    for (let i = 20; i <n.length; i--){
+        let numeroAtual = n[i]
+        if (numeroAtual > maiorNumero){
+            
+            maiorNumero = numeroAtual
+
+        }
+    } 
+    return numeroAtual
+}
+console.log(countingBackwards(20))
